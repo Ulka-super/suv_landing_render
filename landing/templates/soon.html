@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUV Platform – Coming Soon</title>
+</head>
+<body style="background:#f4f4f4; font-family:sans-serif; text-align:center; padding:100px 20px;">
+  <h1>SUV Platform</h1>
+  <p>We’re building something powerful for service-based businesses.</p>
+  <p>Sign up to be first to know when we launch:</p>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" style="padding:10px 20px; font-size:1rem; background:#222; color:white; border:none;">Notify Me</button>
+  </form>
+  <p style="margin-top: 2em; font-size: 0.9rem;">© 2025 SUV Platform. All rights reserved.</p>
+</body>
+</html>
