@@ -1,6 +1,8 @@
+# landing/urls.py
 from django.urls import path
-from .views import soon
+from . import views
 
 urlpatterns = [
-    path('', soon, name='soon'),
+    path('', views.soon, name='soon'),
+    path('success/', views.success, name='success'),  # new success page
 ]
